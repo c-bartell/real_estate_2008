@@ -70,5 +70,14 @@ class HouseTest < Minitest::Test
     @house.add_room(@room_4)
     assert_equal 1900, @house.area
   end
-  
+
+  def test_it_can_make_a_hash_of_details
+    expected_details = {
+      "price" => 400000,
+      "address" => "123 sugar lane"
+    }
+
+    actual_details = @house.details
+    assert_equal expected_details, actual_details
+  end
 end
