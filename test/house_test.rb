@@ -21,4 +21,8 @@ class HouseTest < Minitest::Test
   def test_it_has_an_address
     assert_equal "123 sugar lane", @house.address
   end
+
+  def test_it_has_no_rooms_by_default
+    assert_equal [], house.rooms
+  end
 end
