@@ -17,10 +17,10 @@ class RoomTest < Minitest::Test
   def test_it_has_dimensions
     room1 = Room.new(:bedroom, 10, '13')
     room2 = Room.new(:living_room, 15, '12')
-    assert_equal 10, room_1.length
+    assert_equal 10, room1.length
     assert_equal '13', room1.width
     assert_equal 15, room2.length
-    assert_equal '13', room2.width
+    assert_equal '12', room2.width
   end
 
   def test_it_can_get_area
