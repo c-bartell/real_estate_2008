@@ -14,4 +14,9 @@ class House
   def add_room(room)
     @rooms << room
   end
+
+  def above_market_average?
+    market_average = 500000
+    price > market_average
+  end
 end

@@ -47,6 +47,7 @@ class HouseTest < Minitest::Test
   end
 
   def test_it_can_group_rooms_by_category
+    skip
     @house.add_room(@room_1)
     @house.add_room(@room_2)
     @house.add_room(@room_3)
@@ -62,6 +63,7 @@ class HouseTest < Minitest::Test
   end
 
   def test_it_can_calculate_total_area_of_rooms
+    skip
     @house.add_room(@room_1)
     assert_equal 130, @house.area
 
@@ -72,6 +74,7 @@ class HouseTest < Minitest::Test
   end
 
   def test_it_can_make_a_hash_of_details
+    skip
     expected_details = {
       "price" => 400000,
       "address" => "123 sugar lane"
