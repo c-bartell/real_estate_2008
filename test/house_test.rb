@@ -18,5 +18,7 @@ class HouseTest < Minitest::Test
     assert_equal 400000, @house.price
   end
 
-  
+  def test_it_has_an_address
+    assert_equal "123 sugar lane", @house.address
+  end
 end
