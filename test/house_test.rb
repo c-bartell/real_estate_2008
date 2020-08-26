@@ -70,13 +70,12 @@ class HouseTest < Minitest::Test
   end
 
   def test_it_can_make_a_hash_of_details
-    skip
     expected_details = {
       "price" => 400000,
       "address" => "123 sugar lane"
     }
-
     actual_details = @house.details
+
     assert_equal expected_details, actual_details
   end
 end
