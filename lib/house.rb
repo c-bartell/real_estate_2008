@@ -19,4 +19,8 @@ class House
     market_average = 500000
     price > market_average
   end
+
+  def area
+    rooms.sum { |room| room.area }
+  end
 end

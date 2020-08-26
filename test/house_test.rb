@@ -63,7 +63,6 @@ class HouseTest < Minitest::Test
   end
 
   def test_it_can_calculate_total_area_of_rooms
-    skip
     @house.add_room(@room_1)
     assert_equal 130, @house.area
 
