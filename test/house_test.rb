@@ -15,7 +15,6 @@ class HouseTest < Minitest::Test
   end
 
   def test_it_has_a_price
-    skip
     assert_equal 400000, @house.price
   end
 

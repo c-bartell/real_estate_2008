@@ -3,4 +3,8 @@ class House
     @price = price
     @address = address
   end
+
+  def price
+    @price.delete("$").to_i
+  end
 end
