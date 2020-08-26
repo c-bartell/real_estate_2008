@@ -23,7 +23,6 @@ class HouseTest < Minitest::Test
   end
 
   def test_it_has_no_rooms_by_default
-    skip
     assert_equal [], @house.rooms
   end
 
