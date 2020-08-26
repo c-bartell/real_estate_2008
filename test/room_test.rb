@@ -9,9 +9,18 @@ class RoomTest < Minitest::Test
   end
 
   def test_it_has_a_category
-    skip
+    # skip
     room = Room.new(:bedroom, 10, '13')
     assert_equal :bedroom, room.category
+  end
+
+  def test_it_has_dimensions
+    room1 = Room.new(:bedroom, 10, '13')
+    room2 = Room.new(:living_room, 15, '12')
+    assert_equal 10, room_1.length
+    assert_equal '13', room1.width
+    assert_equal 15, room2.length
+    assert_equal '13', room2.width
   end
 
   def test_it_can_get_area
@@ -23,11 +32,13 @@ class RoomTest < Minitest::Test
   end
 
   def test_is_not_painted_by_default
+    skip
     room1 = Room.new(:bedroom, 10, '13')
     assert_equal false, room1.is_painted?
   end
 
   def test_it_can_be_painted
+    skip
     room1 = Room.new(:bedroom, 10, '13')
     assert_equal false, room1
     room1.paint
