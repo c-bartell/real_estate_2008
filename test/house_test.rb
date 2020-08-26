@@ -15,18 +15,22 @@ class HouseTest < Minitest::Test
   end
 
   def test_it_has_a_price
+    skip
     assert_equal 400000, @house.price
   end
 
   def test_it_has_an_address
+    skip
     assert_equal "123 sugar lane", @house.address
   end
 
   def test_it_has_no_rooms_by_default
+    skip
     assert_equal [], @house.rooms
   end
 
   def test_it_can_add_rooms
+    skip
     assert_equal [], @house.rooms
     @house.add_room(@room_1)
     assert_equal [@room_1], @house.rooms
